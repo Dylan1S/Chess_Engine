@@ -5,9 +5,9 @@ namespace chess{
     using Move = uint16_t;
     using Piece = uint8_t;
     using Bitboard = uint64_t;
-    //encoding move into int16
-    //Structure of encoded move: flags: 15-12; from: 11-6; to: 5-0 
-
+    //encoding move into int16 
+    //structure of move:....|......|......
+    //               4 flag|6 from|6 to
     //flags:    
     enum flags{
         SILENT = 0, //0000
