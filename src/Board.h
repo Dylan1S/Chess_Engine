@@ -1,5 +1,5 @@
 #include <string>
-#define __bitBoard unsigned __int64
+#define __bitBoard unsigned long long
 class Board
 {
 private:

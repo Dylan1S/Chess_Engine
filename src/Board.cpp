@@ -31,51 +31,51 @@ Board::Board(std::string fen)
         switch(fen[i])
         {
             case 'p':
-                m_bPawns |= (0b1 << i);
+                m_bPawns |= (1ULL << i);
                 break;
 
             case 'P':
-                m_wPawns |= (0b1 << i);
+                m_wPawns |= (1ULL << i);
                 break;
 
             case 'n':
-                m_bKnights |= (0b1 << i);
+                m_bKnights |= (1ULL << i);
                 break;
 
             case 'N':
-                m_wKnights |= (0b1 << i);
+                m_wKnights |= (1ULL<< i);
                 break;
 
             case 'b':
-                m_bBishops |= (0b1 << i);
+                m_bBishops |= (1ULL<< i);
                 break;
 
             case 'B':
-                m_wBishops |= (0b1 << i);
+                m_wBishops |= (1ULL<< i);
                 break;
 
             case 'r':
-                m_bRooks |= (0b1 << i);
+                m_bRooks |= (1ULL << i);
                 break;
 
             case 'R':
-                m_wRooks |= (0b1 << i);
+                m_wRooks |= (1ULL<< i);
                 break;
 
             case 'q':
-                m_bQueens |= (0b1 << i);
+                m_bQueens |= (1ULL << i);
                 break;
 
             case 'Q':
-                m_wQueens |= (0b1 << i);
+                m_wQueens |= (1ULL<< i);
                 break;
 
             case 'k':
-                m_bKing |= (0b1 << i);
+                m_bKing |= (1ULL<< i);
                 break;
 
             case 'K':
-                m_wKing |= (0b1 << i);
+                m_wKing |= (1ULL<< i);
                 break;
             default:
                 return;
